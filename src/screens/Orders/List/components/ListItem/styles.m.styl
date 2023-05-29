@@ -1,0 +1,25 @@
+@import '../../../../../common.styl'
+
+// .row
+//   min-height 64px
+
+//   div
+//     display flex
+//     align-items center
+
+//     div
+//       width 80%
+
+//     &:last-child div
+//       width 100%
+
+.row 
+  display: grid
+  grid-template-columns: .5fr 2fr 1fr 1fr 2fr
+  align-items: center
+  gap: 1rem
+  text-align: center
+
+.orderNumber
+  font-weight 500
+  color $primary-dark

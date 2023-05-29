@@ -1,0 +1,54 @@
+@import '../../../common.styl'
+
+.screenWrapper
+  display flex
+  justify-content: center
+  padding: 1rem
+  width: 100%
+
+.screen
+  background white
+  display flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  border-radius: .5rem
+  padding: 1rem
+
+.table
+  color black
+  display: flex
+  flex-direction column
+  justify-content: space-between
+  
+
+.head
+  margin: 1rem 0
+  text-align: center
+  color black
+
+.row
+  color black
+  display grid
+  grid-template-columns: .5fr 2fr 1fr 1fr 2fr
+  text-align: center
+  padding-left: 1rem
+  padding-right: calc(1rem + 6px)
+  align-items center
+  gap 1rem
+
+.body
+  display flex
+  flex-direction column
+  gap 1rem
+  margin-bottom: 1rem
+  padding 1rem
+  max-height: 80vh
+  overflow-y: auto
+  coolScrollbar()
+  
+.pagination
+  display flex
+  justify-content: center
+  align-items center
+  gap: 2rem
